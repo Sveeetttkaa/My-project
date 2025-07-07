@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: url('images/фон\ для\ мобильной\ версии.png');
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-blue: #4177DC;
+    --color-grey: #888B91;
+}
+
+body > *:not(.hidden-list) {
+    padding: 20px;
+}
+
+/* Header */
+.top-section {
+    display: flex;
+    /* border: 1px solid #ccc; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.hidden-list {
+    background-image: url(images/фон\ для\ меню\ выпадающего.png);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    min-height: 438px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border: 1px solid #000; */
+    /* padding-left: 68%; */
+    right: 0;
+    text-align: right;
+    /* padding-right: 30px; */
+    z-index: 1000;
+    top: 100%;
+    width: 100vw;
+    height: 100vw;
+    margin-top: -65px;
+    padding-top: 30px;
+    margin-right: -20px;
+    /* padding-right: 30px; */
+    padding-left: 30px;
+}
+
+.hidden-list >*:not(.menu) {
+    padding-right: 30px;
+}
+
+.hidden-list img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    /* border: 1px solid #ccc; */
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-left: -20px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: 'Exo';
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.menu .home {
+    color: var(--color-blue);
+}
+
+.menu-icon, .close-icon {
+    cursor: pointer;
+}
+
+
+/* Main block 1 */
+.block-1 {
+    display: flex;
+    padding-top: 10px;
+    /* border: 1px solid slateblue; */
+}
+
+.hidden-block {
+    visibility: hidden;
+}
+
+.main-car {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Exo';
+    color: var(--color-white);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main-car h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.main-car h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.energy {
+    margin-top: -8px;
+    margin-bottom: 50px;
+}
+
+/* Main block 2 */
+.above-block-2 {
+    display: flex;
+    /* border: 1px solid burlywood; */
+    justify-content: center;
+}
+
+.block-2 {
+    margin-top: 25px;
+    /* border: 1px solid #ccc; */
+    color: var(--color-white);
+    font-family: 'Exo';
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-2 article {
+    text-align: center;
+}
+
+.block-2 article >* {
+    margin: 0;
+}
+
+.block-2 h3 {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.block-2 p {
+    font-size: 9px;
+    color: var(--color-grey);
+}
+
+.block-2 img {
+    width: 25px;
+    object-fit: contain;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ccc; */
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-left: 22px;
+}
