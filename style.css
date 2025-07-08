@@ -3,6 +3,8 @@
 body {
     background-image: url('images/фон\ для\ мобильной\ версии.png');
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     height: 100%;
 }
@@ -11,6 +13,7 @@ body {
     --color-white: #FFFFFF;
     --color-blue: #4177DC;
     --color-grey: #888B91;
+    --color-light-grey: #BABEC4;
 }
 
 body > *:not(.hidden-list) {
@@ -176,5 +179,254 @@ body > *:not(.hidden-list) {
     justify-content: center;
     padding-bottom: 30px;
     padding-top: 25px;
-    padding-left: 22px;
+}
+
+/* Main block 3 */
+.above-block-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.block-3 {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.group-2500 {
+    width: 180px;
+    align-self: flex-end;
+    margin-top: -50px;
+}
+
+/* Main block 4 */
+.block-4 {
+    font-family: 'Exo';
+    margin-top: 60px;
+}
+
+.block-4 h2 {
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.block-4 p {
+    font-weight: 200;
+    color: var(--color-grey);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Main block 5 */
+.block-5 {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block-5 h2 {
+    font-family: 'Exo';
+    color: var(--color-white);
+    font-weight: 500;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -30px;
+}
+
+.block-5 article {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+}
+
+.buy {
+    cursor: pointer;
+    width: 50px;
+    object-fit: contain;
+    align-self: flex-end;
+    margin-top: -42px;
+}
+
+.row-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 90px;
+}
+
+.three-points {
+    padding-top: 20px;
+}
+
+.three-points img {
+    cursor: pointer;
+}
+
+.slider-wrapper {
+  width: 490px; 
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row-elements {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.row-elements article {
+  min-width: 200px; 
+  margin-right: 20px; 
+  flex-shrink: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.row-elements article:last-child {
+  margin-right: 0;
+}
+
+.three-points {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.three-points img {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Main block 6 */
+.block-6 h2 {
+    position: relative;
+    /* border: 1px solid aquamarine; */
+    font-family: 'Exo';
+    color: var(--color-white);
+    font-weight: 500;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.with-car-vista {
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    margin-top: 85px;
+}
+
+.feature {
+    /* border: 1px solid forestgreen; */
+    display: flex;
+    flex-direction: column;
+    margin-top: -283px;
+    justify-content: space-between;
+    gap: 90px;
+    margin-left: 28px;
+    margin-bottom: 40px;
+}
+
+.feature img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.changin {
+    padding-bottom: 89px;
+}
+
+.range {
+    position: absolute;
+    width: 100px;
+    object-fit: contain;
+    margin-top: -218px;
+    margin-left: 29px;
+}
+
+/* Main block 7 */
+.block-7 h2 {
+    font-family: 'Exo';
+    color: var(--color-white);
+    font-weight: 500;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.filtres img {
+    cursor: pointer;
+}
+
+.car-7 {
+    width: 210px;
+    object-fit: contain;
+}
+
+.block-7 article {
+    position: relative;
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+}
+
+.column-car {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-car-hidden {
+    visibility: hidden;
+}
+
+.buy-2 {
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+    width: 50px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Main block 8 */
+.block-8 h2 {
+    font-family: 'Exo';
+    color: var(--color-white);
+    font-weight: 500;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.block-8 p {
+    font-family: 'Exo';
+    color: var(--color-light-grey);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.block-8 {
+    text-align: center;
+}
+
+.block-8 a img {
+    margin-top: 30px;
+}
+
+.block-8-car {
+    margin-top: 40px;
+    margin-left: 43px;
 }
