@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html, body > *:not(.hidden-block, .close-icon) {
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('images/фон\ для\ мобильной\ версии.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: #0A0A0B;
     overflow-x: hidden;
+    overflow-y: hidden;
     height: 100%;
+    padding: 0%;
+    margin: 0;
+    overflow-y: scroll;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 :root {
@@ -16,11 +29,20 @@ body {
     --color-light-grey: #BABEC4;
 }
 
-body > *:not(.hidden-list) {
+body > *:not(.hidden-list, .block-8) {
     padding: 20px;
 }
 
 /* Header */
+header {
+    background-image: url('images/header\ фон.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    /* border: 5px solid darkblue; */
+}
+
 .top-section {
     display: flex;
     /* border: 1px solid #ccc; */
@@ -35,7 +57,7 @@ body > *:not(.hidden-list) {
     background-size: cover;
     background-position: center center;
     position: absolute;
-    min-height: 438px;
+    max-height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -227,6 +249,9 @@ body > *:not(.hidden-list) {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
+    margin-left: 10px;
+    margin-right: -20px;
 }
 
 .block-5 h2 {
@@ -234,7 +259,7 @@ body > *:not(.hidden-list) {
     color: var(--color-white);
     font-weight: 500;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 13px;
     margin-bottom: -30px;
 }
 
@@ -302,31 +327,55 @@ body > *:not(.hidden-list) {
 }
 
 /* Main block 6 */
+.block-6 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid darkcyan;
+    background-image: url('images/Map.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    align-self: center;
+    object-fit: contain;
+}
+
 .block-6 h2 {
     position: relative;
-    /* border: 1px solid aquamarine; */
     font-family: 'Exo';
     color: var(--color-white);
     font-weight: 500;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 50px;
+    padding-bottom: 10px; 
 }
 
 .with-car-vista {
-    /* border: 1px solid #ccc; */
+    border: 1px solid violet;
     text-align: center;
-    margin-top: 85px;
+    align-items: center;
+    margin-top: 30px;
+    width: 360px;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.with-car-vista >* {
+    margin: 0;
 }
 
 .feature {
-    /* border: 1px solid forestgreen; */
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    margin-top: -283px;
+    gap: 89px;
+    border: 1px solid forestgreen;
     justify-content: space-between;
-    gap: 90px;
-    margin-left: 28px;
-    margin-bottom: 40px;
+    margin-top: -285px;
+    padding-left: 48px;
 }
 
 .feature img {
@@ -334,17 +383,15 @@ body > *:not(.hidden-list) {
     object-fit: contain;
 }
 
-.changin {
-    padding-bottom: 89px;
-}
-
 .range {
     position: absolute;
-    width: 100px;
+    /* width: 100px;
+    margin-top: 132px;
+    right: 110px; */
     object-fit: contain;
-    margin-top: -218px;
-    margin-left: 29px;
 }
+
+
 
 /* Main block 7 */
 .block-7 h2 {
@@ -408,7 +455,7 @@ body > *:not(.hidden-list) {
     color: var(--color-white);
     font-weight: 500;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 50px;
 }
 
 .block-8 p {
@@ -418,9 +465,23 @@ body > *:not(.hidden-list) {
     margin-top: 40px;
 }
 
+
 .block-8 {
+    width: 100vw;
+    margin-top: 30px;
+    padding: 0;
+    margin-left: -20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-origin: padding-box;
+    background-image: url('images/subscribe-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    /* border: 1px solid sienna; */
     text-align: center;
 }
+
 
 .block-8 a img {
     margin-top: 30px;
@@ -428,5 +489,90 @@ body > *:not(.hidden-list) {
 
 .block-8-car {
     margin-top: 40px;
-    margin-left: 43px;
+    margin-left: 53px;
+    /* border: 1px solid fuchsia; */
+}
+
+/* Main block 9 */
+.block-9 {
+    display: grid;
+    width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    grid-template-columns: 6em 6em 6em;
+    grid-template-rows: 6em 6em;
+    margin-top: 70px;
+    gap: 10px; /* например */
+    justify-items: center; /* или end, или stretch */
+    align-items: center;   /* или end, или stretch */
+}
+
+.block-9 img:hover {
+    transform: scale(1.02);
+    transition: transform 0.25s ease;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    min-width: 100vw;
+    font-family: 'Exo';
+    margin-top: 60px;
+    background-image: url('images/фон для footer.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%; 
+    display: inline-flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+footer > * {
+    padding: 0;
+    margin: 0;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer p {
+    color: var(--color-light-grey);
+}
+
+footer h3 {
+    color: var(--color-white);
+    font-weight: 500;
+    padding-bottom: 11px;
+    padding-top: 19px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-light-grey);
+}
+
+.bottom-letter {
+    margin: 45px auto 0 auto; /* сверху 45px, слева и справа auto */
+    width: fit-content; /* либо задайте фиксированную ширину */
+    text-align: center; /* если внутри текст */
+}
+
+.footer-logo {
+    width: 100px;
+    object-fit: cover;
+    margin-bottom: 11px;
+}
+
+.connection {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.connection img {
+    cursor: pointer;
 }
