@@ -200,7 +200,7 @@ header {
     /* border: 1px solid #ccc; */
     justify-content: center;
     padding-bottom: 30px;
-    padding-top: 25px;
+    padding-top: 55px;
 }
 
 /* Main block 3 */
@@ -330,17 +330,16 @@ header {
 .block-6 {
     display: flex;
     flex-direction: column;
-    border: 1px solid darkcyan;
     background-image: url('images/Map.png');
-    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center 70px;
+    background-position: center 70px; 
     justify-content: center;
     align-items: center;
     text-align: center;
     max-width: 100%;
     align-self: center;
-    object-fit: contain;
+    object-fit: contain; 
+    min-height: 680px;
 }
 
 .block-6 h2 {
@@ -349,18 +348,18 @@ header {
     color: var(--color-white);
     font-weight: 500;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 10px; 
+    margin-top: -110px;
+    padding-bottom: 40px; 
+    justify-content: center;
+    align-items: center;
 }
 
 .with-car-vista {
-    border: 1px solid violet;
     text-align: center;
-    align-items: center;
-    margin-top: 30px;
-    width: 360px;
-    position: relative;
-    justify-content: flex-start;
+}
+
+.with-car-vista img {
+    width: 150px;
 }
 
 .with-car-vista >* {
@@ -368,14 +367,19 @@ header {
 }
 
 .feature {
-    align-items: flex-start;
+    display: flex;             
+    align-items: center;        
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -285px;                  
+}
+
+.column {
     display: flex;
-    flex-direction: column;
-    gap: 89px;
-    border: 1px solid forestgreen;
-    justify-content: space-between;
-    margin-top: -285px;
-    padding-left: 48px;
+    flex-direction: column;     
+    gap: 90px;
+    margin-right: 20px;                  
 }
 
 .feature img {
@@ -384,14 +388,8 @@ header {
 }
 
 .range {
-    position: absolute;
-    /* width: 100px;
-    margin-top: 132px;
-    right: 110px; */
-    object-fit: contain;
+    margin-top: -37px;
 }
-
-
 
 /* Main block 7 */
 .block-7 h2 {
